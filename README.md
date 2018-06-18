@@ -17,7 +17,7 @@
 
 
 ## Install IDEAS
-#### (1) clone the github repository 
+#### Clone the github repository 
 ```
 git clone https://github.com/guanjue/IDEAS_2018.git
 ```
