@@ -117,7 +117,7 @@ time bash run_IDEAS.sh
 
 ## The heatmap for IDEAS epigenetic state
 ##### Average atac-seq signal heatmap (left). Most abundant functional state heatmap (right).
-<img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f2_roadmap_result.png" width="800"/>
+<img src="https://github.com/guanjue/IDEAS_2018/blob/master/test_data/run_IDEAS_result/test_IDEAS.para0.pdf" width="800"/>
 
 ## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the following folder: 
 ```
