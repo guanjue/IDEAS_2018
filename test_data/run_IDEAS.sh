@@ -1,12 +1,14 @@
 ###### run IDEAS
 ######
 ### cp script in the folder
-mkdir -p run_IDEAS_result
+IDEAS_job_name=test_IDEAS
+output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
+
+mkdir -p $output_folder
 cp -r ~/group/software/IDEAS/IDEAS_2018/bin ./
-### run IDEAS
-time Rscript bin/runme.R /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.input /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.parafile /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result
+### run IDEAStime Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_folder
 ### get GenomeBrowser Tracks
-find `pwd` -name *chr*.state > state_file_list.txt
-time Rscript bin/runme.R /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.input /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_get_tracks.parafile /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result
+rm $output_folder*tmp*
+find `pwd` -name *chr*.state > state_file_list.txttime Rscript bin/runme.R run_IDEAS.input run_IDEAS_get_tracks.parafile $output_folder
 ### get heatmap
-time Rscript bin/get_heatmap.R run_IDEAS_result/test_IDEAS.para0 FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
+time Rscript bin/get_heatmap.R $output_folder$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
