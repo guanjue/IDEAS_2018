@@ -124,7 +124,7 @@ time bash run_IDEAS.sh
 ```
 
 ## Output results for test data
-### All output files will be to the 
+### All output files will be saved to the following folder
 ```
 output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 ```
