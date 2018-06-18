@@ -4,13 +4,11 @@
 #### (Zhang, Yu, Lin An, Feng Yue, and Ross C. Hardison. "Jointly characterizing epigenetic dynamics across multiple human cell types." Nucleic acids research 44, no. 14 (2016): 6721-6731.)
 
 
-#### Figure 1
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f1_IDEAS_mechanism.png" width="800"/>
 
 ##### Figure 1. Illustration of IDEAS model. 
 
 
-#### Figure 2
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f2_roadmap_result.png" width="800"/>
 
 ##### Figure 2. Inferred chromatin states in 127 cell types. (A) Mean epigenetic signal in the IDEAS inferred states (red labeled) and the ChromHMM inferred states (black labeled in brackets). Color key for each state is shown under the heatmap. Percentage of each state in the genome is shown in parenthesis. IDEAS states that do not have a one-to-one mapping with ChromHMM’s states are marked by asterisk. (B) Reproducibility of segmentation by IDEAS between three independent runs using the original program (blue) and the proposed training pipeline (yellow). Each box shows the agreement of segmentation between two runs, measured by adjusted rand index between the inferred chromatin states within matched cell types. Adjusted rand index is a standardized statistics of similarity between two clustering results, which corrects for chance and accounts for different numbers of clusters. (C) Segmentation example by IDEAS and ChromHMM in 127 cell types at genes CIITA and CLEC16A. Blowups highlight some differences between the two maps. Color keys of chromatin states are defined in (A). From: Accurate and reproducible functional maps in 127 human cell types via 2D genome segmentation Nucleic Acids Res. 2017;45(17):9823-9836. doi:10.1093/nar/gkx659
