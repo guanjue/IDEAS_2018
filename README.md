@@ -105,7 +105,7 @@ chr1 1800 2000 R10
 
 
 ## Run IDEAS
-##### (1) for command line version, change the folder names & binfile filename (script_folder, input_folder, output_folder, binfile) in 'run_IDEAS.sh'
+##### (1) for command line version, change the: IDEAS_job_name, script_folder, output_folder, binfile; in 'run_IDEAS.sh'
 ```
 >>> head -100 run_IDEAS.sh 
 ###### run IDEAS
