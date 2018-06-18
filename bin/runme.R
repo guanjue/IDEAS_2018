@@ -208,12 +208,6 @@ if(ideas)
 	write(runideas, file=logfile, append=TRUE);
 	system(runideas);
 
-	fsz1 = file.info(paste(tmpfolder, id, ".state", sep=""))$size;
-	fsz2 = file.info(paste(tmpfolder, id, ".para", sep=""))$size;
-	fsz3 = file.info(paste(tmpfolder, id, ".cluster", sep=""))$size;
-	if(is.na(fsz1)==T | is.na(fsz2)==T | is.na(fsz3)==T | fsz1==0 | fsz2==0 | fsz3==0)
-	{	mystop("IDEAS execution was unsuccessful.", mailfrom, email, logfile); 
-	} else {	write(paste("IDEAS ran successfully, results in ", tmpurl, "\n", sep=""), file=logfile, append=TRUE); }
 }
 
 #-------------------(3) create tracks-----------------------
@@ -224,7 +218,7 @@ if(maketrack)
 
 	if(length(statefiles)==0)
 	{	if(length(split)==1) 
-		{	targetfile=paste(tmpfolder,as.matrix(read.table(split))[,1],sep="");	
+		{	targetfile=paste(tmpfolder, id, '.', as.matrix(read.table(split))[,1],sep="");	
 		} else {	targetfile=paste(tmpfolder, id, sep="");	}
 	} else
 	{	targetfile=gsub(".state","",statefiles);
