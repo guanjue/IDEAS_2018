@@ -6,5 +6,5 @@ source_file = args[3]
 source(source_file)
 
 pdf(paste(input_parafile, '.pdf', sep=''))
-creatHeatmap(input_parafile, scale=scale_use)
+createHeatmap(input_parafile, scale=scale_use)
 dev.off()
