@@ -35,6 +35,7 @@ ERY_ad atac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 MEP atac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/MEP.atac.1M.txt
 ERY_ad h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/ERY_ad.h3k27ac.1M.txt
 MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/MEP.h3k27ac.1M.txt
+......
 ```
 
 ##### The parameter file for IDEAS. 
@@ -101,6 +102,7 @@ chr1 1200 1400 R7
 chr1 1400 1600 R8
 chr1 1600 1800 R9
 chr1 1800 2000 R10
+......
 ```
 
 
