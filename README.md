@@ -79,20 +79,6 @@ maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 
 
 
-
-
-##### The cell type peak signal file list: 1st column is the foldername and the filename in input folder; 2nd column is the cell type label in output figures
-###### The signal track of each cell type in bed format is in the 'atac_sig/' folder
-```
-signal_list.txt
->>> head signal_list.txt 
-atac_sig/LSK.atac.sig.bed	LSK
-atac_sig/CMP.atac.sig.bed	CMP
-atac_sig/MEP.atac.sig.bed	MEP
-atac_sig/GMP.atac.sig.bed	GMP
-```
-
-
 ## RUN Snapshot
 ##### (1) for command line version, change the folder names (script_folder, input_folder, output_folder) in 'runall.sh'
 ```
