@@ -79,7 +79,7 @@ maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 
 
 
-## RUN Snapshot
+## RUN IDEAS
 ##### (1) for command line version, change the folder names (script_folder, input_folder, output_folder) in 'runall.sh'
 ```
 head -4 runall.sh 
