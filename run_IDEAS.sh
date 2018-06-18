@@ -14,7 +14,7 @@ cp -r $script_folder'data' ./
 ### get genome inv file
 time python $script_folder'bin/bed2inv.py' -i $binfile -o $binfile'.inv'
 ### run IDEAS
-time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_folder
+time Rscript bin/runme.R $IDEAS_job_name'.input' $IDEAS_job_name'.parafile' $output_folder
 ### rm tmp files
 rm $output_folder*tmp*
 ### get heatmap

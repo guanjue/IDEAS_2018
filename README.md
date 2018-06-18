@@ -106,10 +106,10 @@ chr1 1800 2000 R10
 
 ## Run IDEAS
 ##### (1) for command line version, change the following parameters in the 'run_IDEAS.sh' file:
-###### IDEAS_job_name;
-###### script_folder;
-###### output_folder;
-###### binfile 
+###### IDEAS_job_name='IDEAS run name'
+###### script_folder='absolute path to the IDEAS_2018 folder'
+###### output_folder='absolute path to the output folder'
+###### binfile='name of bin file'
 ```
 >>> head -100 run_IDEAS.sh 
 ###### run IDEAS
