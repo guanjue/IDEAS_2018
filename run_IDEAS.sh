@@ -1,7 +1,7 @@
 ###### run IDEAS
 ######
 ### cp script in the folder
-IDEAS_job_name=test_IDEAS
+IDEAS_job_name=run_IDEAS
 script_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
 output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 binfile=mm10_noblacklist_200bin.bed
