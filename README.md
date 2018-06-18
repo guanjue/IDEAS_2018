@@ -113,7 +113,10 @@ time bash run_IDEAS.sh
 ```
 
 ## Output results for test data
-### All output files will be to the 'output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/'
+### All output files will be to the 
+```
+output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
+```
 
 ## The heatmap for IDEAS epigenetic state
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/test_data/run_IDEAS_result/test_IDEAS.para0.png" width="800"/>
