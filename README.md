@@ -166,5 +166,9 @@ output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run
 track_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
 ```
 
+## REFERENCES
+
+##### Zhang, Yu, Lin An, Feng Yue, and Ross C. Hardison. "Jointly characterizing epigenetic dynamics across multiple human cell types." Nucleic acids research 44, no. 14 (2016): 6721-6731.
+##### Zhang, Yu, and Ross C. Hardison. "Accurate and reproducible functional maps in 127 human cell types via 2D genome segmentation." Nucleic acids research 45, no. 17 (2017): 9823-9836.
 
 
