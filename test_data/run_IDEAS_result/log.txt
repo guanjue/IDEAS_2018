@@ -60,3 +60,111 @@ Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_resul
 Mon Jun 18 01:46:05 2018
 Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
 IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 02:36:42 2018
+Rscript bin/ideaspipe.R /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 02:47:00 2018
+Rscript bin/ideaspipe.R /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 02:51:42 2018
+Rscript bin/ideaspipe.R /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ Create Custom Tracks ]------
+Mon Jun 18 02:54:50 2018
+------[ Create Custom Tracks ]------
+Mon Jun 18 02:59:16 2018
+Tracks created successfully in /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+
+Mon Jun 18 02:59:56 2018
+The hub url is  /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+A direct link to the VISION browser is http://main.genome-browser.bx.psu.edu/cgi-bin/hgTracks?db=mm10&hubUrl=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+
+Done!
+
+------[ IDEAS Analysis ]------
+Mon Jun 18 03:00:28 2018
+Rscript bin/ideaspipe.R /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 03:08:31 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ Create Custom Tracks ]------
+Mon Jun 18 03:11:38 2018
+Tracks created successfully in /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+
+Mon Jun 18 03:12:02 2018
+The hub url is  /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+A direct link to the VISION browser is http://main.genome-browser.bx.psu.edu/cgi-bin/hgTracks?db=mm10&hubUrl=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+
+Done!
+
+------[ IDEAS Analysis ]------
+Mon Jun 18 12:54:30 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ Create Custom Tracks ]------
+Mon Jun 18 12:55:03 2018
+Tracks created successfully in /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+
+Mon Jun 18 12:55:42 2018
+The hub url is  /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+A direct link to the VISION browser is http://main.genome-browser.bx.psu.edu/cgi-bin/hgTracks?db=mm10&hubUrl=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+
+Done!
+
+------[ IDEAS Analysis ]------
+Mon Jun 18 12:57:07 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+------[ IDEAS Analysis ]------
+Mon Jun 18 12:58:31 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ Create Custom Tracks ]------
+Mon Jun 18 13:06:53 2018
+Tracks created successfully in /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+
+Mon Jun 18 13:07:53 2018
+The hub url is  /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+A direct link to the VISION browser is http://main.genome-browser.bx.psu.edu/cgi-bin/hgTracks?db=mm10&hubUrl=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+
+Done!
+
+------[ IDEAS Analysis ]------
+Mon Jun 18 13:09:39 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 13:20:48 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+------[ Create Custom Tracks ]------
+Mon Jun 18 13:30:22 2018
+------[ IDEAS Analysis ]------
+Mon Jun 18 13:38:15 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+------[ Create Custom Tracks ]------
+Mon Jun 18 13:39:20 2018
+Tracks created successfully in /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+
+Mon Jun 18 13:40:56 2018
+The hub url is  /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+A direct link to the VISION browser is http://main.genome-browser.bx.psu.edu/cgi-bin/hgTracks?db=mm10&hubUrl=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+
+Done!
+
+------[ IDEAS Analysis ]------
+Mon Jun 18 13:43:20 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+------[ Create Custom Tracks ]------
+Mon Jun 18 13:52:51 2018
+Tracks created successfully in /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+
+Mon Jun 18 13:54:11 2018
+The hub url is  /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+A direct link to the VISION browser is http://main.genome-browser.bx.psu.edu/cgi-bin/hgTracks?db=mm10&hubUrl=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/hub_test_IDEAS.txt
+
+Done!
+

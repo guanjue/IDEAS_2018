@@ -1,0 +1,2 @@
+genome mm10
+trackDb trackDb_test_IDEAS.txt

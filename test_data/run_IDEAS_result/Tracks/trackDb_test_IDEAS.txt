@@ -1,0 +1,22 @@
+track bigBed1
+priority 1
+type bigBed 9 .
+itemRgb on
+maxItems 100000
+bigDataUrl http://bx.psu.edu/~yuzhang/tmp/test_IDEAS.1.bb
+shortLabel ERY_ad
+longLabel test_IDEAS ERY_ad
+color 0,0,0
+visibility dense
+
+track bigBed2
+priority 2
+type bigBed 9 .
+itemRgb on
+maxItems 100000
+bigDataUrl http://bx.psu.edu/~yuzhang/tmp/test_IDEAS.2.bb
+shortLabel MEP
+longLabel test_IDEAS MEP
+color 0,0,0
+visibility dense
+
