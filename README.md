@@ -24,7 +24,10 @@ git clone https://github.com/guanjue/IDEAS_2018.git
 
 
 ## Input data
-##### The input file list: 1st column: cell type name; 2nd column: mark name; 3rd column: input file and its absolution path; each column is separated by whitespace
+##### The input file list: each column is separated by whitespace
+###### 1st column: cell type name; 
+###### 2nd column: mark name; 
+###### 3rd column: input file and its absolution path
 ```
 run_IDEAS.input
 >>> head run_IDEAS.input 
@@ -80,7 +83,11 @@ split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on di
 ```
 
 
-##### The bin file for IDEAS. 1st column: chromosome; 2nd column: bin start coordinate; 3rd column: bin end coordinate; 4th column: bin id; each column is separated by whitespace 
+##### The bin file for IDEAS: each column is separated by whitespace
+###### 1st column: chromosome; 
+###### 2nd column: bin start coordinate; 
+###### 3rd column: bin end coordinate; 
+###### 4th column: bin id 
 ```
 mm10_noblacklist_200bin.bed
 >>> head mm10_noblacklist_200bin.bed
