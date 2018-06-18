@@ -159,7 +159,7 @@ output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run
 ```
 
 ## The heatmap for IDEAS epigenetic state
-<img src="https://github.com/guanjue/IDEAS_2018/blob/master/test_data/run_IDEAS_result/test_IDEAS.para0.png" width="800"/>
+<img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f3_vision_result.png" width="800"/>
 
 ## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the subfolder in the output folder: 
 ```
