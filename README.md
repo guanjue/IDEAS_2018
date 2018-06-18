@@ -116,8 +116,7 @@ time bash run_IDEAS.sh
 ### All output files will be to the 'output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/'
 
 ## The heatmap for IDEAS epigenetic state
-##### Average atac-seq signal heatmap (left). Most abundant functional state heatmap (right).
-<img src="https://github.com/guanjue/IDEAS_2018/blob/master/test_data/run_IDEAS_result/test_IDEAS.para0.pdf" width="800"/>
+<img src="https://github.com/guanjue/IDEAS_2018/blob/master/test_data/run_IDEAS_result/test_IDEAS.para0.png" width="800"/>
 
 ## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the following folder: 
 ```

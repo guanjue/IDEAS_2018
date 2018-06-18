@@ -8,3 +8,7 @@ source(source_file)
 pdf(paste(input_parafile, '.pdf', sep=''))
 createHeatmap(input_parafile, scale=scale_use)
 dev.off()
+
+pdf(paste(input_parafile, 'png', sep=''))
+createHeatmap(input_parafile, scale=scale_use)
+dev.off()
