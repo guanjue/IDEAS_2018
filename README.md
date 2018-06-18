@@ -6,7 +6,8 @@
 
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f1_IDEAS_mechanism.png" width="800"/>
 
-##### Figure 1. Illustration of IDEAS model. 
+##### Figure 1. Illustration of IDEAS model. The IDEAS method borrows locus specific information across cell types to improve accuracy, and simultaneously accounts for local cell type relationships for inferring cell type-specific activities. In particular, to infer epigenetic state at a given locus in a target cell type, IDEAS uses the currently inferred states in other cell types at the same locus, but only those cell types showing similar local epigenetic landscapes with the target cell type, as priors to improve inference. The local window (dashed box) is dynamically determined by Markov chains, and cell types are clustered within the local window for their relationships with the target cell. The entire process is iterative with all the unknowns (epigenetic states and local cell type clustering) updated until convergence. The final segmentation is then colored using an automatic coloring script for visualization in browser.
+
 
 
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f2_roadmap_result.png" width="800"/>
