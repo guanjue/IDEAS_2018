@@ -1,0 +1,10 @@
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=24:00:00
+#PBS -j oe
+cd /gpfs/group/yzz2/legacy/group/software/IDEAS/IDEAS_2018/test_data
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/aci/sw/mathematica/11.0.1/SystemFiles/Libraries/Linux-x86-64/
+PATH=$PATH:./bin/
+
+#PBS -o run_IDEAS_result/test_IDEAS.tmp.7.script.out
+
+ideas run_IDEAS.input.7 mm10.noblack_list.bed -impute none -C 100 -minerr 0.5 -cap 16 -sample 20 5 -thread 20 -o run_IDEAS_result/test_IDEAS.tmp.7 -inv 264780 269780

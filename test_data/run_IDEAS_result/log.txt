@@ -38,3 +38,25 @@ IDEAS execution was unsuccessful.
 Fri Jun 15 17:25:57 2018
 Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 4 -randstart 20 500 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
 IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 01:32:04 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 4 -randstart 20 500 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 01:34:38 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 4 -randstart 20 500 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 01:37:26 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 4 -randstart 20 500 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+------[ IDEAS Analysis ]------
+Mon Jun 18 01:39:12 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 4 -randstart 20 500 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.
+------[ IDEAS Analysis ]------
+Mon Jun 18 01:45:33 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 20 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+------[ IDEAS Analysis ]------
+Mon Jun 18 01:46:05 2018
+Rscript bin/ideaspipe.R run_IDEAS.input mm10.noblack_list.bed -o run_IDEAS_result/test_IDEAS -sample 20 5 -thread 20 -randstart 5 5000 -split mm10.noblack_list.inv -impute None -C 100 -minerr 0.5 -cap 16
+IDEAS execution was unsuccessful.

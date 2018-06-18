@@ -1,6 +1,6 @@
 id= test_IDEAS		#job id, also used as output file names
 email= giardine@bx.psu.edu
-thread= 4		#number of threads to be used for parallelization
+thread= 20		#number of threads to be used for parallelization
 
 prepmat= 0		#1: preprocess data, 0: for data already processed for ideas
 build= mm10 		#hg19, hg38, mm9, mm10, not used if bedfile is specified
@@ -9,8 +9,8 @@ bed= mm10.noblack_list.bed	#user specified windows
 sig= mean		#mean: mean signal per window, max: max signal per window
 
 ideas= 1		#1: run ideas, 0: not run ideas
-train= 20		#number of random starts, used to select states, 0: no training
-trainsz= 500
+train= 5		#number of random starts, used to select states, 0: no training
+trainsz= 5000
 log2= 0			#take log2(x+num), 0: do not take log2
 cap= 16			#maximum signal is capped at 16
 norm= 0			#1: standardize by mean and std, 0: no normalization
