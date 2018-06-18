@@ -105,8 +105,9 @@ chr1 1800 2000 R10
 
 
 ## Run IDEAS
-##### (1) for command line version, change the following parameters in the 'run_IDEAS.sh' file:
-###### IDEAS_job_name='IDEAS run name'
+##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the analysis folder
+
+##### (2) change the following parameters in the 'run_IDEAS.sh' file:
 ###### script_folder='absolute path to the IDEAS_2018 folder'
 ###### output_folder='absolute path to the output folder'
 ###### binfile='name of bin file'
@@ -134,10 +135,21 @@ rm $output_folder*tmp*
 ### get heatmap
 time Rscript bin/get_heatmap.R $output_folder$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
 ```
-##### (2) use 'run_IDEAS.sh' script to run Snapshot
+
+##### (3) change the following parameters in the parameter file:
+```
+thread= 32				#number of threads to be used for parallelization
+build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
+bed= mm10.noblack_list.bed		#user specified windows
+split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately
+```
+
+##### (4) use 'run_IDEAS.sh' script to run IDEAS
 ```
 time bash run_IDEAS.sh
 ```
+
+
 
 ## Output results for test data
 ### All output files will be saved to the following folder:
