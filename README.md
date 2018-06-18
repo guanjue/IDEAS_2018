@@ -71,9 +71,9 @@ maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 ```
 ##### Usually, user just needs to change the following parameters in the parameter file:
 ```
-thread= 32							#number of threads to be used for parallelization
-build= mm10							#hg19, hg38, mm9, mm10, not used if bedfile is specified
-bed= mm10.noblack_list.bed			#user specified windows
+thread= 32	#number of threads to be used for parallelization
+build= mm10	#hg19, hg38, mm9, mm10, not used if bedfile is specified
+bed= mm10.noblack_list.bed	#user specified windows
 split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately
 ```
 
