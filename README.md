@@ -14,25 +14,22 @@
 ##### The data visualization for index-set-149 and corresponding GO analysis and MEME-ChIP TF binding motif analysis. (a) The hematopoietic cell differentiation tree colored by the average ATAC-seq signal in each cell type of the index-set-149. The violin plot represents the distribution of ATAC-seq signal in each cell type of the index-set-149 is in below.  (b) The same cell differentiation tree colored by the most frequent functional annotation in each cell type of the index-set-149. The two most frequence functional annotation in erythroblasts lineage. The bar plot based on the proportion of each functional annotation in each cell type of the index-set-149 is below the cell differentiation tree. (c) The index-set-149 relevant GO term. (d) The index-set-149 significantly enriched TF binding motif from MEME-ChIP analysis.
 
 
-## Install Snapshot
+## Install IDEAS
 #### (1) clone the github repository 
-#### (2) run the INSTALL.sh command
 ```
-git clone https://github.com/guanjue/snapshot.git
-cd snapshot
-bash INSTALL.sh
+git clone https://github.com/guanjue/IDEAS_2018.git
 ```
 
+
 ## Input data
-##### The cell type peak binary label file list: 1st column is the foldername and the filename in input folder; 2nd column is the cell type label in output figures
-###### The peak binary label of each cell type in bed format is in the 'atac_pk/' folder
+##### The input file list: 1st column: cell type name; 2nd column: mark name; 3rd column: input file and its absolution path; each column is separated by whitespace
 ```
-peak_list.txt
->>> head peak_list.txt 
-atac_pk/LSK.pk.bed	LSK
-atac_pk/CMP.pk.bed	CMP
-atac_pk/MEP.pk.bed	MEP
-atac_pk/GMP.pk.bed	GMP
+run_IDEAS.input
+>>> head run_IDEAS.input 
+ERY_ad atac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/ERY_ad.atac.1M.txt
+MEP atac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/MEP.atac.1M.txt
+ERY_ad h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/ERY_ad.h3k27ac.1M.txt
+MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/MEP.h3k27ac.1M.txt
 ```
 
 ##### The cell type peak signal file list: 1st column is the foldername and the filename in input folder; 2nd column is the cell type label in output figures
@@ -46,40 +43,6 @@ atac_sig/MEP.atac.sig.bed	MEP
 atac_sig/GMP.atac.sig.bed	GMP
 ```
 
-##### The cell type functional state file list: 1st column is the foldername and the filename in input folder; 2nd column is the cell type label in output figures
-###### The functional state label of each cell type in bed format is in the 'function_label/' folder
-```
-function_list.txt
->>> head function_list.txt 
-function_label/LSK.ideas.bed	LSK
-function_label/CMP.ideas.bed	CMP
-function_label/MEP.ideas.bed	MEP
-function_label/GMP.ideas.bed	GMP
-```
-
-##### The cell type differentiation tree: Each row represent one edge in the ell type differentiation tree. The 1st cell type is the progenitor cell type and the 2nd cell type is the differentiated cell type
-```
-cd_tree.txt 
-head cd_tree.txt
-LSK,CMP
-CMP,MEP
-CMP,GMP
-```
-
-##### The functional state color list
-```
->>> head function_color_list.txt
-36	35	194,7,153	250,151,3
-35	34	250,151,3	136,53,241
-34	33	136,53,241	197,151,0
-33	32	197,151,0	138,177,89
-32	31	138,177,89	191,0,84
-31	30	191,0,84	176,0,93
-30	29	176,0,93	252,48,50
-29	28	252,48,50	0,0,172
-28	27	0,0,172	219,8,0
-27	26	219,8,0	241,198,171
-```
 
 ## RUN Snapshot
 ##### (1) for command line version, change the folder names (script_folder, input_folder, output_folder) in 'runall.sh'
@@ -90,13 +53,10 @@ script_folder='/Users/universe/Documents/2018_BG/snapshot/bin/'
 input_folder='/Users/universe/Documents/2018_BG/snapshot/test_data/input_data/'
 output_folder='/Users/universe/Documents/2018_BG/snapshot/test_data/output_result/'
 ```
-##### (2) use 'runall.sh' script to run Snapshot
+##### (2) use 'run_IDEAS.sh' script to run Snapshot
 ```
-bash runall.sh
+time bash run_IDEAS.sh
 ```
-##### (3) for graphical user interface (GUI) version, see:
-https://github.com/guanjue/snapshot/blob/master/gui_manual.md
-
 
 ## Output results for test data
 ### All output files will be to the 'output_folder'
