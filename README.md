@@ -71,8 +71,8 @@ maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 ```
 ##### Usually, user just needs to change the following parameters in the parameter file:
 ```
-thread= 32			#number of threads to be used for parallelization
-build= mm10			#hg19, hg38, mm9, mm10, not used if bedfile is specified
+thread= 32				#number of threads to be used for parallelization
+build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
 bed= mm10.noblack_list.bed		#user specified windows
 split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately
 ```
@@ -119,7 +119,7 @@ time bash run_IDEAS.sh
 ##### Average atac-seq signal heatmap (left). Most abundant functional state heatmap (right).
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f2_roadmap_result.png" width="800"/>
 
-## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the following folder: 'output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/' + 'Tracks/'
+## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the following folder: 
 ```
 /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
 ```
