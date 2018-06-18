@@ -2,8 +2,6 @@
 
 ### Advanced sequencing technologies have generated a plethora of data for many chromatin marks in multiple tissues and cell types, yet there is lack of a generalized tool for optimal utility of those data. A major challenge is to quantitatively model the epigenetic dynamics across both the genome and many cell types for understanding their impacts on differential gene regulation and disease. We introduce IDEAS, an integrative and discriminative epigenome annotation system, for jointly characterizing epigenetic landscapes in many cell types and detecting differential regulatory regions. A key distinction between our method and existing state-of-the-art algorithms is that IDEAS integrates epigenomes of many cell types simultaneously in a way that preserves the position-dependent and cell type-specific information at fine scales, thereby greatly improving segmentation accuracy and producing comparable annotations across cell types.
 
-## Example of IDEAS output: 
-### Hematopoietic cell differentiation in VISION (ValIdated Systematic IntegratiON of hematopoietic epigenomes) project
 #### Figure 1
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f1_IDEAS_mechanism.png" width="800"/>
 
@@ -33,6 +31,18 @@ MEP atac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEA
 ERY_ad h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/ERY_ad.h3k27ac.1M.txt
 MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/MEP.h3k27ac.1M.txt
 ```
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##### The cell type peak signal file list: 1st column is the foldername and the filename in input folder; 2nd column is the cell type label in output figures
 ###### The signal track of each cell type in bed format is in the 'atac_sig/' folder
