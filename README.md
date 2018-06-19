@@ -113,9 +113,9 @@ cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.parafile working_dir/
 
 ```
 ##### (2) change the following parameters in the 'run_IDEAS.sh' file:
-###### script_directory='absolute path to the IDEAS_2018 directory'
+###### script_dir='absolute path to the IDEAS_2018 dir'
 ###### working_dir='absolute path to the working directory'
-###### output_directory='absolute path to the output directory'
+###### output_dir='absolute path to the output directory'
 ###### binfile='name of bin file'
 ```
 >>> head -100 run_IDEAS.sh 
@@ -123,23 +123,23 @@ cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.parafile working_dir/
 ######
 ### cp script in the directory
 IDEAS_job_name=run_IDEAS
-script_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
-output_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
+script_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
+output_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 binfile=mm10_noblacklist_200bin.bed
 
 ### make output directory
-mkdir -p $output_directory
+mkdir -p $output_dir
 ### cp scripts to the working directory
-cp -r $script_directory'bin' ./
-cp -r $script_directory'data' ./
+cp -r $script_dir'bin' ./
+cp -r $script_dir'data' ./
 ### get genome inv file
-time python $script_directory'bin/bed2inv.py' -i $binfile -o $binfile'.inv'
+time python $script_dir'bin/bed2inv.py' -i $binfile -o $binfile'.inv'
 ### run IDEAS
-time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_directory
+time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_dir
 ### rm tmp files
-rm $output_directory*tmp*
+rm $output_dir*tmp*
 ### get heatmap
-time Rscript bin/get_heatmap.R $output_directory$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
+time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
 ```
 
 ##### (3) change the following parameters in the parameter file:
@@ -160,7 +160,7 @@ time bash run_IDEAS.sh
 ## Output results for test data
 ### All output files will be saved to the following directory:
 ```
-output_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
+output_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 ```
 
 ## The heatmap for IDEAS epigenetic state
@@ -170,7 +170,7 @@ output_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/
 
 ## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the subdirectory (named as Tracks/) in the output directory: 
 ```
-track_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+track_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
 ```
 
 ## References
