@@ -106,39 +106,40 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 
 
 ## Run IDEAS
-##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the working folder
+##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the working directory
 ```
 cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.sh working_dir/
 cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.parafile working_dir/
 
 ```
 ##### (2) change the following parameters in the 'run_IDEAS.sh' file:
-###### script_folder='absolute path to the IDEAS_2018 folder'
-###### output_folder='absolute path to the output folder'
+###### script_directory='absolute path to the IDEAS_2018 directory'
+###### working_dir='absolute path to the working directory'
+###### output_directory='absolute path to the output directory'
 ###### binfile='name of bin file'
 ```
 >>> head -100 run_IDEAS.sh 
 ###### run IDEAS
 ######
-### cp script in the folder
+### cp script in the directory
 IDEAS_job_name=run_IDEAS
-script_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
-output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
+script_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
+output_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 binfile=mm10_noblacklist_200bin.bed
 
-### make output folder
-mkdir -p $output_folder
-### cp scripts to the working folder
-cp -r $script_folder'bin' ./
-cp -r $script_folder'data' ./
+### make output directory
+mkdir -p $output_directory
+### cp scripts to the working directory
+cp -r $script_directory'bin' ./
+cp -r $script_directory'data' ./
 ### get genome inv file
-time python $script_folder'bin/bed2inv.py' -i $binfile -o $binfile'.inv'
+time python $script_directory'bin/bed2inv.py' -i $binfile -o $binfile'.inv'
 ### run IDEAS
-time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_folder
+time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_directory
 ### rm tmp files
-rm $output_folder*tmp*
+rm $output_directory*tmp*
 ### get heatmap
-time Rscript bin/get_heatmap.R $output_folder$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
+time Rscript bin/get_heatmap.R $output_directory$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
 ```
 
 ##### (3) change the following parameters in the parameter file:
@@ -157,9 +158,9 @@ time bash run_IDEAS.sh
 
 
 ## Output results for test data
-### All output files will be saved to the following folder:
+### All output files will be saved to the following directory:
 ```
-output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
+output_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 ```
 
 ## The heatmap for IDEAS epigenetic state
@@ -167,9 +168,9 @@ output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run
 
 ##### Figure 3. The epigenetic state inferred by IDEAS. Each row represents one epigenetic state. Each column represents one epigenetic mark. The color density represent the average signal of all genome loci with the corresponding epigenetic state. The dark blue represents high average signal. The white represent the low average signal. 
 
-## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the subfolder (named as Tracks/) in the output folder: 
+## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the subdirectory (named as Tracks/) in the output directory: 
 ```
-track_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
+track_directory=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/Tracks/
 ```
 
 ## References
