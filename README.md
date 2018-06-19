@@ -60,7 +60,7 @@ maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 #statename= statename.txt               #state names
 #cellinfo= cellinfo.txt #cell type information, order of cell types will be the same in browser, 4 columns: cell type id as shown in state files, cell type short label to be shown in browser, cell type long label, cell type text color
 ```
-##### Usually, user just needs to change the following parameters in the parameter file:
+##### Usually, user only needs to change the following parameters in the parameter file:
 ```
 thread= 32				#number of threads to be used for parallelization
 build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
@@ -107,7 +107,11 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 
 ## Run IDEAS
 ##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the working folder
+```
+cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.sh working_dir/
+cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.parafile working_dir/
 
+```
 ##### (2) change the following parameters in the 'run_IDEAS.sh' file:
 ###### script_folder='absolute path to the IDEAS_2018 folder'
 ###### output_folder='absolute path to the output folder'
