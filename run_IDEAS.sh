@@ -9,8 +9,8 @@ binfile=mm10_noblacklist_200bin.bed
 ### make output folder
 mkdir -p $output_folder
 ### cp scripts to the analysis folder
-cp -r $script_folder'bin' ./
-cp -r $script_folder'data' ./
+if [ -d bin ]; then rm -r bin; cp -r $script_folder'bin' ./; else cp -r $script_folder'bin' ./; fi
+if [ -d data ]; then rm -r bin; cp -r $script_folder'data' ./; else cp -r $script_folder'data' ./; fi
 ### get genome inv file
 time python $script_folder'bin/bed2inv.py' -i $binfile -o $binfile'.inv'
 ### run IDEAS
