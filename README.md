@@ -106,7 +106,7 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 
 
 ## Run IDEAS
-##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the analysis folder
+##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the working folder
 
 ##### (2) change the following parameters in the 'run_IDEAS.sh' file:
 ###### script_folder='absolute path to the IDEAS_2018 folder'
@@ -124,7 +124,7 @@ binfile=mm10_noblacklist_200bin.bed
 
 ### make output folder
 mkdir -p $output_folder
-### cp scripts to the analysis folder
+### cp scripts to the working folder
 cp -r $script_folder'bin' ./
 cp -r $script_folder'data' ./
 ### get genome inv file
