@@ -164,6 +164,7 @@ output_folder=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run
 
 ## The heatmap for IDEAS epigenetic state
 <img src="https://github.com/guanjue/IDEAS_2018/blob/master/example_figures/f3_vision_result.png" width="800"/>
+
 ##### Figure 3. The epigenetic state inferred by IDEAS. Each row represents one epigenetic state. Each column represents one epigenetic mark. The color density represent the average signal of all genome loci with the corresponding epigenetic state. The dark blue represents high average signal. The white represent the low average signal. 
 
 ## The genome browser track (bigbed format) for IDEAS epigenetic state will be saved in the subfolder (named as Tracks/) in the output folder: 
