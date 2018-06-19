@@ -148,7 +148,7 @@ thread= 32				#number of threads to be used for parallelization
 build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
 bed= mm10.noblack_list.bed		#user specified windows
 split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately. 
-					#The interval will be generated based on the bed file by the pipeline. The name of interval file is $bed'.inv'
+					#The interval will be generated based on the bed file by the pipeline. The name of interval file will be $bed'.inv'
 ```
 
 ##### (4) use 'run_IDEAS.sh' script to run IDEAS
