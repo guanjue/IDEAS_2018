@@ -104,6 +104,18 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 ......
 ```
 
+##### The signal file: one signal column 
+###### 1st column: signal of the mark in the cell 
+```
+>>> head /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/ERY_ad.atac.1M.txt
+0
+0
+0
+0
+0
+......
+```
+
 
 ## Run IDEAS
 ##### (1) copy the 'run_IDEAS.sh' & 'run_IDEAS.parafile' into the working directory
