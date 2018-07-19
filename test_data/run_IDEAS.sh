@@ -18,4 +18,4 @@ time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_folder
 ### rm tmp files
 rm $output_folder*tmp*
 ### get heatmap
-time Rscript bin/get_heatmap.R $output_folder$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
+time Rscript bin/get_heatmap.R $output_folder$IDEAS_job_name'.para0' FALSE $script_folder'bin/createGenomeTracks.R'
