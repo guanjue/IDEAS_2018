@@ -75,8 +75,8 @@ split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on di
 ###### 3rd column: bin end coordinate; 
 ###### 4th column: bin id 
 ```
-mm10_noblacklist_200bin.bed
->>> head mm10_noblacklist_200bin.bed
+mm10.noblack_list.bed
+>>> head mm10.noblack_list.bed
 chr1 0 200 R1
 chr1 200 400 R2
 chr1 400 600 R3
@@ -122,11 +122,12 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 ```
 cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.sh working_dir/
 cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.parafile working_dir/
+cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.input working_dir/
+# also make sure all the paths in the "run_IDEAS.input" are absolute path.
 
 ```
 ##### (2) change the following parameters in the 'run_IDEAS.sh' file:
 ###### script_dir='absolute path to the IDEAS_2018 dir'
-###### working_dir='absolute path to the working directory'
 ###### output_dir='absolute path to the output directory'
 ###### binfile='name of bin file'
 ```
@@ -137,7 +138,7 @@ cp ~/group/software/IDEAS/IDEAS_2018/run_IDEAS.parafile working_dir/
 IDEAS_job_name=run_IDEAS
 script_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
 output_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
-binfile=mm10_noblacklist_200bin.bed
+binfile=mm10.noblack_list.bed	#(Absolute path is required if file isn't under the working direactory)
 
 ### make output directory
 mkdir -p $output_dir
@@ -158,9 +159,9 @@ time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ~/group/
 ```
 thread= 32				#number of threads to be used for parallelization
 build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
-bed= mm10.noblack_list.bed		#user specified windows
+bed= mm10.noblack_list.bed		#user specified windows. (Absolute path is required if file isn't under the working direactory)
 split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately. 
-					#The interval will be generated based on the bed file by the pipeline. The name of interval file will be $bed'.inv'
+					#The interval will be generated based on the bed file by the pipeline. The name of interval file will be $bed'.inv'. (Absolute path is required if file isn't under the working direactory)
 ```
 
 ##### (4) use 'run_IDEAS.sh' script to run IDEAS
