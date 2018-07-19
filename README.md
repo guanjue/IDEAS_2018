@@ -167,7 +167,7 @@ time Rscript bin/runme.R run_IDEAS.input run_IDEAS.parafile $output_dir
 ### rm tmp files
 rm $output_dir*tmp*
 ### get heatmap
-time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ~/group/software/IDEAS/IDEAS_2018/bin/createGenomeTracks.R
+time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ./bin/createGenomeTracks.R
 ```
 
 ##### (4) change the following parameters in the parameter file:
