@@ -38,7 +38,7 @@ thread= 32              #number of threads to be used for parallelization
 prepmat= 0              #1: preprocess data, 0: for data already processed for ideas
 build= mm10             #hg19, hg38, mm9, mm10, not used if bedfile is specified
 prenorm= 0              #1: normalize data (assumed 100Million reads in total), 0: do not normalize
-bed= mm10.noblack_list.bed      #user specified windows
+bed= mm10.noblack_list.bin      #user specified windows
 sig= mean               #mean: mean signal per window, max: max signal per window
 
 ideas= 1                #1: run ideas, 0: not run ideas
@@ -54,7 +54,7 @@ minerr= 0.5             #minimum standard deviation in each state, usually betwe
 smooth= 0               #make states more homogeneous along genome, 0: original ideas
 burnin= 20              #number of burnins, include both sampling and maximization
 sample= 5               #number of steps for maximization, 1 may be fine
-split= mm10.noblack_list.bed.inv    #specify an interval file, ideas will run on different intervals separately. The name of interval file is $bed'.inv'
+split= mm10.noblack_list.bin.inv    #specify an interval file, ideas will run on different intervals separately. The name of interval file is $bed'.inv'
 impute= None            #specify which marks to be imputed; or All or None
 maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 #statefiles= /storage/home/gzx103/scratch/gtex_encode/bams/entex_data_output_0_16lim_ideas_01/ideas_state_filelist.txt  #only needed if ideas was not run; separate file names by ","
@@ -68,8 +68,8 @@ maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 ```
 thread= 32				#number of threads to be used for parallelization
 build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
-bed= mm10.noblack_list.bed		#user specified windows
-split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately
+bed= mm10.noblack_list.bin		#user specified windows
+split= mm10.noblack_list.bin.inv	#specify an interval file, ideas will run on different intervals separately
 cap= 16					#maximum signal is capped at 16
 ```
 
@@ -80,8 +80,8 @@ cap= 16					#maximum signal is capped at 16
 ###### 3rd column: bin end coordinate; 
 ###### 4th column: bin id 
 ```
-mm10.noblack_list.bed
->>> head mm10.noblack_list.bed
+mm10.noblack_list.bin
+>>> head mm10.noblack_list.bin
 chr1 0 200 R1
 chr1 200 400 R2
 chr1 400 600 R3
@@ -162,9 +162,9 @@ IDEAS_job_name=run_IDEAS
 script_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
 output_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
 <<<<<<< HEAD
-binfile=mm10.noblack_list.bed
+binfile=mm10.noblack_list.bin
 =======
-binfile=mm10.noblack_list.bed	#(Absolute path is required if file isn't under the working direactory)
+binfile=mm10.noblack_list.bin	#(Absolute path is required if file isn't under the working direactory)
 >>>>>>> 01138efd09dcd5db00916be265069eba00889ffe
 
 ### make output directory
@@ -186,8 +186,8 @@ time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ./bin/cr
 ```
 thread= 32				#number of threads to be used for parallelization
 build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
-bed= mm10.noblack_list.bed		#user specified windows. (Absolute path is required if file isn't under the working direactory)
-split= mm10.noblack_list.bed.inv	#specify an interval file, ideas will run on different intervals separately. 
+bed= mm10.noblack_list.bin		#user specified windows. (Absolute path is required if file isn't under the working direactory)
+split= mm10.noblack_list.bin.inv	#specify an interval file, ideas will run on different intervals separately. 
 					#The interval will be generated based on the bed file by the pipeline. The name of interval file will be $bed'.inv'. (Absolute path is required if file isn't under the working direactory)
 ```
 
