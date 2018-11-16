@@ -20,8 +20,10 @@
 ```
 git clone https://github.com/guanjue/IDEAS_2018.git
 ```
-#### it requires python 2.7 and of GSL 2.2.1 
-#### Add the ~gsl/lib into the LD_LIBRARY_PATH
+#### IDEAS requires GSL 2.2.1 and python 2.7
+#### The instruction about GSL can be found in the following link:
+https://www.gnu.org/software/gsl/manual/gsl-ref.html
+#### Add the ~/gsl/lib into the LD_LIBRARY_PATH
 
 
 ## Input data
