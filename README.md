@@ -20,6 +20,8 @@
 ```
 git clone https://github.com/guanjue/IDEAS_2018.git
 ```
+#### it requires python 2.7 and of GSL 2.2.1 
+#### Add the ~gsl/lib into the LD_LIBRARY_PATH
 
 
 ## Input data
