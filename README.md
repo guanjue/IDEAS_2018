@@ -71,6 +71,7 @@ build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
 bed= mm10.noblack_list.bin		#user specified windows
 split= mm10.noblack_list.bin.inv	#specify an interval file, ideas will run on different intervals separately
 cap= 16					#maximum signal is capped at 16
+impute= None                            #specify which marks to be imputed; or All or None; If user wants to keep the imputed signal, set it as 'All'
 ```
 
 

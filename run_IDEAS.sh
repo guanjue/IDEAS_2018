@@ -5,7 +5,7 @@ IDEAS_job_name=run_IDEAS
 script_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/
 working_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/
 output_dir=/storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_result/
-binfile=mm10_noblacklist_200bin.bed
+binfile=mm10_noblacklist_200bin.bin
 
 cd $working_dir
 ### make output dir
