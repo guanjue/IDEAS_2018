@@ -59,7 +59,7 @@ minerr= 0.5             #minimum standard deviation in each state, usually betwe
 smooth= 0               #make states more homogeneous along genome, 0: original ideas
 burnin= 20              #number of burnins, include both sampling and maximization
 sample= 5               #number of steps for maximization, 1 may be fine
-split= mm10.noblack_list.bin.inv    #specify an interval file, ideas will run on different intervals separately. The name of interval file is $bed'.inv'
+#split= mm10.noblack_list.bin.inv    #specify an interval file, ideas will run on different intervals separately. The name of interval file is $bed'.inv'
 impute= None            #specify which marks to be imputed; or All or None
 maketrack= 1            #1: make custom tracks for browser visual, 0: no tracks
 #statefiles= /storage/home/gzx103/scratch/gtex_encode/bams/entex_data_output_0_16lim_ideas_01/ideas_state_filelist.txt  #only needed if ideas was not run; separate file names by ","
@@ -193,8 +193,6 @@ time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ./bin/cr
 thread= 32				#number of threads to be used for parallelization
 build= mm10				#hg19, hg38, mm9, mm10, not used if bedfile is specified
 bed= mm10.noblack_list.bin		#user specified windows. (Absolute path is required if file isn't under the working direactory)
-split= mm10.noblack_list.bin.inv	#specify an interval file, ideas will run on different intervals separately. 
-					#The interval will be generated based on the bed file by the pipeline. The name of interval file will be $bed'.inv'. (Absolute path is required if file isn't under the working direactory)
 ```
 
 ##### (5) use 'run_IDEAS.sh' script to run IDEAS
