@@ -116,7 +116,14 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 ```
 
 ##### The signal file: one signal column 
-###### 1st column: signal of the mark in the cell 
+###### 1st column: signal of the mark in the cell
+###### User can convert the bigwig file into the signal file by using the ucsc bigWigAverageOverBed utility.
+###### The UCSC utility can be downloaded from (http://hgdownload.soe.ucsc.edu/admin/exe/)
+```
+cell_mark=NK_atac
+bigWigAverageOverBed $cell_mark'.bw' whole_genome_bin.bed $cell_mark'.bw.tab'
+sort -k1,1 $cell_mark'.bw.tab' | cut -f5 > $cell_mark'.bw.tab.sig'
+``` 
 ```
 >>> head /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_IDEAS_input/ERY_ad.atac.1M.txt
 0
