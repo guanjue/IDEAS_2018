@@ -20,4 +20,4 @@ time Rscript ./bin/runme.R $IDEAS_job_name'.input' $IDEAS_job_name'.parafile' $o
 ### rm tmp files
 rm $output_dir*tmp*
 ### get heatmap
-time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para0' FALSE ./bin/createGenomeTracks.R
+time Rscript bin/get_heatmap.R $output_dir$IDEAS_job_name'.para' FALSE ./bin/createGenomeTracks.R
