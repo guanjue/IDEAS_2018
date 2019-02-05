@@ -225,6 +225,8 @@ if(show)
 				{	markcolor[i,]=c(50,200,50);	}
 				if(regexpr("ctcf",tolower(marks[i]))>0)
 				{	markcolor[i,]=c(200,0,250);	}
+				if(regexpr("wgbs",tolower(marks[i]))>0)
+				{	markcolor[i,]=c(30,144,255);	}
 			}
 		}
 		statecolor=array(stateColor(m,markcolor),dim=c(dim(m)[1],2));
