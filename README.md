@@ -117,7 +117,8 @@ MEP h3k27ac /storage/home/gzx103/group/software/IDEAS/IDEAS_2018/test_data/run_I
 
 ##### The signal file: one signal column 
 ###### 1st column: signal of the mark in the cell
-###### User can convert the bigwig file into the signal file by using the ucsc bigWigAverageOverBed utility.
+###### User can convert the bigwig file into the signal file by using the ucsc bigWigAverageOverBed utility. 
+#####!!!After using the bigWigAverageOverBed, the row should be reordered so that the order of rows match with the mm10.noblack_list.bin!!!
 ###### The UCSC utility can be downloaded from (http://hgdownload.soe.ucsc.edu/admin/exe/)
 ```
 cell_mark=NK_atac
