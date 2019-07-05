@@ -19,7 +19,7 @@ stateColor<-function(statemean, markcolor=NULL)
 	s=(s-min(s))/(max(s)-min(s)+1e-10);
 #s=s^0.5;
 	
-mycol=round(255-(255-mycol)*s/0.5);
+mycol=round(255-(255-mycol)*s/0.75);
 mycol[mycol<0]=0;
 rt=paste(mycol[,1],mycol[,2],mycol[,3],sep=",");
 h=t(apply(mycol,1,function(x){rgb2hsv(x[1],x[2],x[3])}));
