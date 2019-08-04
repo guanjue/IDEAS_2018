@@ -156,6 +156,7 @@ createHeatmap<-function(parafile, statecolor = NULL, markcolor = NULL, cols=c("w
 	p=(sqrt(9+8*(k-1))-3)/2;
 	m=as.matrix(x[,1+1:p]/x[,1]);
 	colnames(m) = colnames(x)[1+1:p];
+	m = m[,order(colnames(m))];
 	marks=colnames(m);
 	rownames(m)=paste(1:l-1," (",round(x[,1]/sum(x[,1])*10000)/100,"%)",sep="");
 
