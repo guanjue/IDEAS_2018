@@ -97,6 +97,18 @@ combineState<-function(parafiles, method="ward.D", mycut=0.9, pcut=1., fout=NULL
 {	X=K=I=NULL;
 	library("data.table");
 	myheader=p=NULL;
+
+	### remove para only has 1 state
+	parafiles_no1 = c()
+	for(i in 1:length(parafiles))
+	{
+		x=read.table(parafiles[i], header=T, comment.char='~')
+		if (dim(x)[1]>1){
+			parafiles_no1 = c(parafiles_no1, parafile_i)
+		}
+	}
+	parafiles = parafiles_no1
+
 	for(i in 1:length(parafiles))
 	{	x=fread(parafiles[i]);t=max(which(is.na(x[1,])==F));x=as.matrix(x[,1:t])
 		x=as.matrix(rbind(x))
