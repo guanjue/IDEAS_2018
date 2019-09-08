@@ -104,7 +104,7 @@ combineState<-function(parafiles, method="ward.D", mycut=0.9, pcut=1., fout=NULL
 	{
 		x=read.table(parafiles[i], header=T, comment.char='~')
 		if (dim(x)[1]>1){
-			parafiles_no1 = c(parafiles_no1, parafile_i)
+			parafiles_no1 = c(parafiles_no1, parafiles[i])
 		}
 	}
 	parafiles = parafiles_no1
