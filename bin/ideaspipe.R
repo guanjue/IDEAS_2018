@@ -99,7 +99,7 @@ combineState<-function(parafiles, method="ward.D", mycut=0.9, pcut=1., fout=NULL
 	myheader=p=NULL;
 	for(i in 1:length(parafiles))
 	{	x=fread(parafiles[i]);t=max(which(is.na(x[1,])==F));x=as.matrix(x[,1:t])
-x=x[which(x[,1]>=sum(x[,1])/1e4 & x[,1]>10),];
+		x=as.matrix(x[which(x[,1]>=sum(x[,1])/1e4 & x[,1]>10),]);
 		#x=read.table(parafiles[i]);
 		if(i==1)
 		{	myheader=colnames(x);
