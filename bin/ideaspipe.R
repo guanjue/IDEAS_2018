@@ -469,6 +469,7 @@ mycut=0.5;
 	#{	targs = targs[-c(t,t+1,t+2)];
 	#}
 	#targs = c(targs, "-sample", tburnin, tmcmc);
+	set.seed(2019);
 	for(i in 1:randstart[1])
 	{	tout = paste(out, ".tmp.",i, sep=""); 
 		tinv = round(runif(1, inv[1], inv[2]-randstart[2]));
