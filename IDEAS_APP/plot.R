@@ -1,9 +1,12 @@
+library(data.table)
+
 #draw cell type clusters and epigenetic states
 showPop<-function(fname, suffix="", indlist = NULL, inv = NULL, repn = 1)
 {	
 	border="light grey";
-
-	g = read.table(paste(fname, suffix, ".g", sep="")); g=as.matrix(g[,-(1:3)]);
+	print('read *state')
+#	g = read.table(paste(fname, suffix, ".state", sep="")); g=as.matrix(g[,-(1:4)]);
+	g = as.data.frame(fread(paste(fname, suffix, ".state", sep=""))); g=as.matrix(g[,-(1:4)]);
 	N = (dim(g)[2] - 1) / repn;
 	L = dim(g)[1];
 	if(length(indlist) > 0)
@@ -128,13 +131,16 @@ readPara<-function(fprefix, xsz, ysz, suffix="")
 
 readPop<-function(fname, indlist, inv)
 {
+	#print(indlist)
 	N = max(indlist);
 	L = max(inv) + 1;
 	left = right = ss = index = len = NULL;
-	str=paste(fname,".pop",sep="");
+	str=paste(fname,".cluster",sep="");
+	print(N)
 	for(i in 1:N)
-	{	
+	{	print(paste('read *cluster row', i))	
 		x = read.table(str, nrows=1,skip=(i-1));
+		#x = as.data.frame(fread(str, nrows=1, skip=(i-1)), fill=TRUE);
 		if(length(which(indlist == i)) > 0)
 		{	tl = tr = ts = NULL;
 			llll=length(x);
@@ -172,3 +178,6 @@ readPop<-function(fname, indlist, inv)
 	}
 	return(list(l=left, r=right, s=ss, i=index, z=len));
 }
+
+#showPop('ideas_bp23', inv=1:30)
+
