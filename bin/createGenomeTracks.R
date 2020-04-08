@@ -154,6 +154,8 @@ createHeatmap<-function(parafile, statecolor = NULL, markcolor = NULL, cols=c("w
 	k=dim(x)[2];
 	l=dim(x)[1];
 	p=(sqrt(9+8*(k-1))-3)/2;
+	x[,2:(p+1)]=x[,2:(p+1)][,order(colnames(x)[2:(p+1)])]
+	colnames(x)[2:(p+1)] = colnames(x)[2:(p+1)][order(colnames(x)[2:(p+1)])]
 	m=as.matrix(x[,1+1:p]/x[,1]);
 	colnames(m) = colnames(x)[1+1:p];
 	m = m[,order(colnames(m))];
